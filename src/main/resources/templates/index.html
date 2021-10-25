@@ -1,10 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>GI Calculator</title>
+    <link rel="stylesheet" th:href="@{/styles/styles.css}" type="text/css" media="all">
 </head>
 <body>
-<h2>GI Calculator</h2>
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Blue_circle_for_diabetes.svg"
+     alt="Blue circle for diabetes">
+
+
+<h1>Welcome to the GICalculator</h1>
+
+<p>I'd like to present to you a project for creating website for calculating glycemic index and glycemic load of your
+    meals.</p>
+
+<p> Knowing this is important for people suffering from Diabetes and Insulin resistance.</p>
+<p>It's both: worthy of coding due to calculations needed and useful, so no-one if forced to calculate it manually.</p>
+
+<p>I'm starting with Spring Boot and Thymeleaf, not deciding yet if I'll be using SQL database or operate without
+    it. </p>
+
+<p><a href="/calculator">here</a> you can calculate "things in your meal"</p>
 </body>
 </html>
