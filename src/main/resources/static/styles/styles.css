@@ -1,3 +1,271 @@
 h1{
-    color: #578ad6;
+    color: #2e4a74;
+}
+
+body{
+    background: #578ad6;
+}
+
+.logoBox{
+    background: antiquewhite;
+    border: double bisque 2px;
+}
+
+.menu, .menu-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    scroll-behavior: auto;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: steelblue;
+    color: antiquewhite;
+    margin: 5px 15px;
+}
+
+.menu-width{
+    width: auto;
+}
+.bestmix-name{
+    color: #4a4a4a;
+    font-style: oblique;
+    font-size: large;
+}
+.langButton {
+    width: 10%;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row
+}
+
+.visitCard {
+    box-shadow: 10px 10px 15px gray;
+    padding: 30px;
+    margin-left: 20%;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.kafel {
+    color: gray;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 25px
+}
+
+a:hover {
+    font-style: italic;
+    color: antiquewhite;
+!important;
+}
+
+.a-forced {
+    color: antiquewhite;
+!important;
+}
+
+nav {
+    background: steelblue;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    scroll-behavior: auto;
+    padding: 0 !important;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.menu-width{
+    width: auto;
+}
+
+.banner-div {
+    width: 100%;
+    height: 600px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 3%;
+}
+
+.menuBox {
+    padding: 3rem;
+    width: 30rem;
+    display: block;
+    text-align: center;
+    margin-left: 4%;
+    margin-bottom: -2%
+}
+
+.innerMenuBox {
+    color: #f7f3d5;
+}
+
+input#menu, .menuButton {
+    display: none;
+}
+
+.offer {
+    flex-direction: row;
+    display: flex;
+    font-size: x-large;
+    flex-wrap: wrap;
+}
+
+.offer-img{
+    width: 350px
+}
+
+/*p {*/
+/*    margin-top: 1rem !important;*/
+/*}*/
+
+.shadow {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    scroll-behavior: auto;
+    box-shadow: #f7f3d5 10px 1px 5px 0.3rem
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logoBox {
+    margin-left: 20px
+}
+
+.logo {
+    width: 140px;
+    margin: 2px 2px -72px 6%;
+    z-index: 2;
+    position: relative;
+    border: solid steelblue 2px;
+
+}
+
+.flag {
+    margin: 0;
+    padding: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    nav {
+        display: flex !important;
+        flex-direction: column;
+        font-size: 125%;
+    }
+
+    footer {
+        position: static !important;
+        flex-direction: column;
+    }
+
+    .kafel {
+        margin-left: 0;
+        font-size: 125%;
+    }
+
+
+    .menu-content {
+        max-height: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        margin-right: 100px;
+    }
+
+    .menuButton {
+        display: flex;
+        color: #007bff;
+        font-size: xxx-large;
+    }
+
+    .menuButton:focus {
+        background: lightsteelblue;
+        font-size: xx-large;
+    }
+
+    .menuBox {
+        padding: 3rem;
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    input:checked ~ .menu-content {
+        max-height: 100%;
+    }
+
+    .offer {
+        flex-direction: column;
+        font-size: medium;
+        flex-wrap: nowrap;
+    }
+
+    .offer-img {
+        width: 75%;
+    }
+
+    .logo {
+        width: 110px;
+        margin-bottom: 0;
+    }
+
+    .menu-width{
+        width: 99%;
+    }
+
+    .langButton{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 415px) {
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .langButton {
+        margin-top: -100px;
+        align-self: end;
+        margin-right: 40px;
+    }
+
+    .logo {
+        margin: 2px 2px 2px 6%;
+        z-index: 2;
+        position: relative;
+        border: solid steelblue 2px;
+        height: 110px;
+    }
+
+    .logoBox {
+        align-self: start;
+        margin-left: 10px;
+    }
+
+    .menuButton {
+        margin-bottom: 27px;
+        margin-top: -133px;
+    }
+
+    .flag {
+        margin: -2px 6px 0 0;
+        padding: 4px;
+        font-size: xx-large;
+    }
+
 }

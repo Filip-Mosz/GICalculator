@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Calculator</title>
+    <script th:replace="parts/langScript"></script>
     <link rel="stylesheet" th:href="@{/styles/styles.css}" type="text/css" media="all">
 </head>
 <body>
+<menu th:replace="parts/menu">
+
+</menu>
 <h1>Calculator</h1>
 <p>here you can calculate "things" in your meal</p>
 </body>

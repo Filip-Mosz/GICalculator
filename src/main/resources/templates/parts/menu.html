@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>menu</title>
+</head>
+<body th:fragment="menu">
+<div class="menu menu-width">
+
+    <div class="logoBox">
+        <img class="logo" th:src="@{/img/favicon.webp}" alt="Logo" size="10%">
+    </div>
+    <input type="checkbox" id="menu">
+    <label class="menuButton" for="menu" style="color: antiquewhite; padding: 1rem;">&#128214;</label>
+
+    <div class="menu-content">
+        <p><a href="/" th:text="#{menu.homepage}" class="a-forced">Homepage</a></p>
+        <p><a href="/calculator" th:text="#{menu.calculator}" class="a-forced">Calculator</a></p>
+    </div>
+    <div class="menu" th:class="langButton" th:unless="${noChangeLang}">
+        <!--            https://emojiterra.com/country-flags/-->
+        <span th:utext="#{lang.change}" style="display: flex; flex-direction: row">&#x1F1F7;&#x1F1F4;</span>
+        <select id="locales">
+            <option value=""></option>
+            <option value="pl">&#x1F1F5;&#x1F1F1;</option>
+            <option value="en">&#x1F1EC;&#x1F1E7;</option>
+        </select>
+    </div>
+
+</div>
+</body>
+</html>

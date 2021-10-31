@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>GI Calculator</title>
+    <script th:replace="parts/langScript"></script>
     <link rel="stylesheet" th:href="@{/styles/styles.css}" type="text/css" media="all">
 </head>
 <body>
-<img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Blue_circle_for_diabetes.svg"
-     alt="Blue circle for diabetes">
+<menu th:replace="parts/menu">
 
-
+</menu>
 <h1>Welcome to the GICalculator</h1>
+<p th:text="#{thingToTest}"> test</p>
 
 <p>I'd like to present to you a project for creating website for calculating glycemic index and glycemic load of your
     meals.</p>
